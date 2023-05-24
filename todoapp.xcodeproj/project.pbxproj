@@ -15,6 +15,7 @@
 		B0731DE02A0F7710000ACA55 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0731DDF2A0F7710000ACA55 /* ListRowView.swift */; };
 		B0731DE22A0F7AFF000ACA55 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0731DE12A0F7AFF000ACA55 /* AddView.swift */; };
 		B07FB1AE2A18E0CD0053D41F /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07FB1AD2A18E0CD0053D41F /* ListViewModel.swift */; };
+		B081A9822A1DCE3D009519A4 /* NoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081A9812A1DCE3D009519A4 /* NoItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		B0731DDF2A0F7710000ACA55 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		B0731DE12A0F7AFF000ACA55 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		B07FB1AD2A18E0CD0053D41F /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		B081A9812A1DCE3D009519A4 /* NoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				B0731DDD2A0F7550000ACA55 /* ListView.swift */,
 				B0731DDF2A0F7710000ACA55 /* ListRowView.swift */,
 				B0731DE12A0F7AFF000ACA55 /* AddView.swift */,
+				B081A9812A1DCE3D009519A4 /* NoItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B069808B2A1011C800162A70 /* ItemModel.swift in Sources */,
+				B081A9822A1DCE3D009519A4 /* NoItemView.swift in Sources */,
 				B0731DE22A0F7AFF000ACA55 /* AddView.swift in Sources */,
 				B07FB1AE2A18E0CD0053D41F /* ListViewModel.swift in Sources */,
 				B0731DDE2A0F7550000ACA55 /* ListView.swift in Sources */,

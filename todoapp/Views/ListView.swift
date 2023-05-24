@@ -12,24 +12,34 @@ struct ListView: View {
     @EnvironmentObject var listViewModel:ListViewModel
     
     var body: some View {
-        List{
-            ForEach(listViewModel.items.indices, id: \.self) { index in
-                ListRowView(itemModel: listViewModel.items[index])
-                    .onTapGesture {
-                        withAnimation(.linear){
-                            listViewModel.updateItem(item: listViewModel.items[index])
-                        }
+        ZStack {
+            if(listViewModel.items.isEmpty) {
+                NoItemView()
+            } else {
+                List{
+                    ForEach(listViewModel.items.indices, id: \.self) { index in
+                        ListRowView(itemModel: listViewModel.items[index])
+                            .onTapGesture {
+                                withAnimation(.linear){
+                                    listViewModel.updateItem(item: listViewModel.items[index])
+                                }
+                            }
+                            .listRowBackground((index  % 2 == 0)
+                                               ? Color(.white)
+                                               : Color(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
+                                                      )
+                            )
+                        
+                        
                     }
-                    .listRowBackground((index  % 2 == 0)
-                                       ? Color(.white)
-                                       : Color(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)))
-                
-
+                    .onDelete(perform: listViewModel.deleteItem)
+                    .onMove(perform: listViewModel.moveItem)
+                    
+                }
             }
-            .onDelete(perform: listViewModel.deleteItem)
-            .onMove(perform: listViewModel.moveItem)
-
         }
+        
+        
         .listStyle(PlainListStyle())
         .navigationTitle("To-Do List")
         .navigationBarItems(
