@@ -10,7 +10,7 @@ import SwiftUI
 struct ListRowView: View {
     
     let itemModel: ItemModel
-    
+   
     var body: some View {
         HStack{
             Image(systemName: itemModel.isCompleted
@@ -24,6 +24,7 @@ struct ListRowView: View {
         }
         .font(.title2)
         .padding(.vertical,8)
+        
     }
 }
 
