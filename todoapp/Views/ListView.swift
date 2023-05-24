@@ -24,11 +24,11 @@ struct ListView: View {
                                     listViewModel.updateItem(item: listViewModel.items[index])
                                 }
                             }
-                            .listRowBackground((index  % 2 == 0)
-                                               ? Color(.white)
-                                               : Color(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
-                                                      )
-                            )
+//                            .listRowBackground((index  % 2 == 0)
+//                                               ? Color(.white)
+//                                               : Color(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
+//                                                      )
+//                            )
                         
                         
                     }

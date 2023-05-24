@@ -17,13 +17,13 @@ struct ListRowView: View {
                   ? "checkmark.circle"
                   : "circle"
             )
-            .foregroundColor(itemModel.isCompleted ? .green : .gray)
+            .foregroundColor(itemModel.isCompleted ? .green : .orange)
             
             Text(itemModel.title)
             Spacer()
         }
         .font(.title2)
-        .padding(.vertical,8)
+        .padding(.vertical, 8)
         
     }
 }
